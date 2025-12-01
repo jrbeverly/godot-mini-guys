@@ -1,0 +1,24 @@
+# Godot
+.godot/
+.import/
+*.import
+.mono/
+mono_crash.*
+*.uid
+build/
+
+# Godot C# / .NET
+bin/
+obj/
+*.user
+*.suo
+*.DotSettings.user
+.vs/
+*.csproj.DotSettings
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+.vscode/

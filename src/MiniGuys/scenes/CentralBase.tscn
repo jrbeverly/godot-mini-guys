@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/CentralBase.cs" id="1_base"]
+
+[node name="CentralBase" type="Node2D"]
+script = ExtResource("1_base")
+
+[node name="Visual" type="ColorRect" parent="."]
+offset_left = -24.0
+offset_top = -24.0
+offset_right = 24.0
+offset_bottom = 24.0
+color = Color(0.8, 0.65, 0.1, 1)

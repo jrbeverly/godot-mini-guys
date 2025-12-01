@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/Map.cs" id="1_map"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_map")
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.18, 0.25, 0.13, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="BaseSpawn" type="Marker2D" parent="."]
+
+[node name="EnemySpawn0" type="Marker2D" parent="."]
+position = Vector2(-450, 0)
+
+[node name="EnemySpawn1" type="Marker2D" parent="."]
+position = Vector2(0, -300)
+
+[node name="EnemySpawn2" type="Marker2D" parent="."]
+position = Vector2(450, 0)
+
+[node name="EnemySpawn3" type="Marker2D" parent="."]
+position = Vector2(0, 300)
+
+[node name="RockSpawn0" type="Marker2D" parent="."]
+position = Vector2(-200, -150)
+
+[node name="RockSpawn1" type="Marker2D" parent="."]
+position = Vector2(0, -200)
+
+[node name="RockSpawn2" type="Marker2D" parent="."]
+position = Vector2(200, -150)
+
+[node name="RockSpawn3" type="Marker2D" parent="."]
+position = Vector2(-200, 150)
+
+[node name="RockSpawn4" type="Marker2D" parent="."]
+position = Vector2(0, 200)
+
+[node name="RockSpawn5" type="Marker2D" parent="."]
+position = Vector2(200, 150)

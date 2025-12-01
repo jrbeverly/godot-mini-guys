@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/Hud.cs" id="1_hud"]
+
+[node name="Hud" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+alignment = 1
+
+[node name="StoneLabel" type="Label" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = "Stone: 0"
+horizontal_alignment = 1
+
+[node name="WaveLabel" type="Label" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = "Wave: 0/0"
+horizontal_alignment = 1
+
+[node name="CountdownLabel" type="Label" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = ""
+horizontal_alignment = 1
+
+[node name="BaseHpLabel" type="Label" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = "Base HP: ?/?"
+horizontal_alignment = 1
+
+[node name="WallButton" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = "Wall (5)"
+
+[node name="TowerButton" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+text = "Tower (10)"
+
+[node name="WarningLabel" type="Label" parent="."]
+layout_mode = 0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = 60.0
+offset_right = 200.0
+offset_bottom = 100.0
+text = "Wave incoming!"
+horizontal_alignment = 1
+vertical_alignment = 1
+modulate = Color(1, 0.85, 0.2, 1)
